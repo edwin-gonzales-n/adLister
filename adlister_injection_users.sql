@@ -1,5 +1,6 @@
 use adlister;
 
+TRUNCATE TABLE users;
 insert into users(first_name,last_name,user_email,user_password)
 values ("James",
        "Butt","jbutt@gmail.com",
@@ -81,3 +82,6 @@ values ("James",
        "Flosi","fletcher.flosi@yahoo.com",
        "5E884898DA28047151D0E56F8DC6292773603D0D6AABBDD62A11EF721D1542D8"
      ) ;
+
+select * from users;
+delete from users where id >= 21 and id <=40;

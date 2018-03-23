@@ -1,3 +1,4 @@
+CREATE database adlister;
 use adlister;
 
 create table users
@@ -5,7 +6,7 @@ create table users
 id int not null auto_increment,
 first_name varchar(250),
 last_name varchar(250),
-user_password binary(32),
+user_password CHAR (64),
 user_email varchar(320),
 primary key(id)
 );
